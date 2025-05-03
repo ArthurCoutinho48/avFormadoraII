@@ -1,20 +1,48 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Avaliação Formadora II
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+
+    <ion-grid fixed>
+      <ion-row>
+
+        <!--Card 01-->
+        <ion-col size="12">
+          <ion-card class="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="book-outline" class="fl"></ion-icon>
+                <p>Há tarefas<br>a fazer</p>
+                <ion-icon name="chevron-forward-outline" class="fr icon-go" (click)="navigateToTask(1)"></ion-icon>
+                <h2>Faculdade</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <!--Card 02-->
+        <ion-col size="12">
+          <ion-card class="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="barbell-outline" class="fl"></ion-icon>
+                <p>Há tarefas<br>a fazer</p>
+                <ion-icon name="chevron-forward-outline" class="fr icon-go" (click)="navigateToTask(2)"></ion-icon>
+                <h2>Academia</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </div>
+  
 </ion-content>

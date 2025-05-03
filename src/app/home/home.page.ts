@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
   standalone: false,
 })
-export class HomePage {
+export class HomePage{
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  navigateToTask(rota:number){
+
+    if (rota === 1){
+      this.router.navigate(['/task']);
+    }else if (rota == 2){
+      this.router.navigate(['/task1']);
+    }
+    
+  }
 
 }

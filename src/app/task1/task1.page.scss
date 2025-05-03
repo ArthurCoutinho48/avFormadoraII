@@ -1,0 +1,22 @@
+ion-card-title{
+    color: white;
+}
+
+.task-card{
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    ion-icon:first-child{
+        font-size: 20px;
+        color: #333;
+        background-color: #fff;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 14px;
+        margin-top: 6px;
+    }
+
+}

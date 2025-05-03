@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'task',
+    loadChildren: () => import('./task/task.module').then( m => m.TaskPageModule)
+  },
+  {
+    path: 'task1',
+    loadChildren: () => import('./task1/task1.module').then( m => m.Task1PageModule)
+  },
 ];
 
 @NgModule({
